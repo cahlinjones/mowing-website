@@ -443,7 +443,7 @@ ul {
     position: absolute;
     inset: 0;
     /* ADD YOUR HERO IMAGE HERE - Replace 'none' with url('images/hero-bg.jpg') */
-    background-image: images/2mower.webp;
+    background-image: url('images/mowerz.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
