@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrain Trace | Automated Lawn Care Solutions - Orem & Provo, Utah</title>
+    <meta name="description" content="Authorized Yarbo dealer in Orem and Provo, Utah. Revolutionary autonomous lawn mowers and snow blowers with professional installation and service packages.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Terrain Trace</h1>
+                        <p>AUTOMATED LAWN CARE</p>
+                    </div>
+                </div>
+
+                <div class="nav-links desktop-nav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="lawn-mowers.html">Lawn Mowers</a>
+                    <a href="snow-blower.html">Snow Blower</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="lawn-mowers.html">Lawn Mowers</a>
+            <a href="snow-blower.html">Snow Blower</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="grass-animation"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Authorized Yarbo Dealer</span>
+                <h1 class="hero-title">
+                    Transform Your Lawn
+                    <span class="gradient-text">Effortlessly</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Revolutionary autonomous lawn mowing for Orem and Provo. Experience precision cutting up to 6 acres with zero-wire technology and intelligent navigation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="lawn-mowers.html" class="btn-large btn-primary">
+                        <span>Explore Lawn Mowers</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="contact.html" class="btn-large btn-secondary">Request Quote</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Up to 6 Acres</h3>
+                        <p>Handles large properties</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>No Perimeter Wires</h3>
+                        <p>RTK-GPS navigation</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Expert Installation</h3>
+                        <p>Full setup & training</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Overview -->
+    <section class="products-overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Products</span>
+                <h2>Autonomous Yard Care Solutions</h2>
+                <p>Industry-leading robotic equipment for year-round property maintenance</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card featured">
+                    <div class="product-badge">Most Popular</div>
+                    <div class="product-image">
+                        <!-- REPLACE WITH YOUR SNOW BLOWER IMAGE -->
+                        <img src="images/mower.webp" alt="Yarbo Snow Blower" class="product-img" />
+                        <!-- REPLACE WITH YARBO SNOW BLOWER YOUTUBE VIDEO ID -->
+                        <!-- Find the video on YouTube, copy the ID from the URL (youtube.com/watch?v=VIDEO_ID_HERE) -->
+                        <iframe 
+                            class="product-video"
+                            src="https://www.youtube.com/embed/YOUR_SNOW_BLOWER_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_SNOW_BLOWER_VIDEO_ID&controls=0&modestbranding=1&rel=0"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media"
+                            allowfullscreen
+                        ></iframe>
+                        <!-- Placeholder (remove when you add real images) -->
+                        <div class="placeholder-image snow-blower">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Yarbo Snow Blower</h3>
+                        <p>24/7 autonomous snow removal with 2-stage power system. Handles 12" deep snow, 24" clearing width, and throws snow up to 40 feet. Weather-triggered operation means you wake up to clear driveways.</p>
+                        <ul class="product-highlights">
+                            <li>Weather-triggered automatic start</li>
+                            <li>Works in temperatures to -13°F</li>
+                            <li>2-stage power clears packed snow</li>
+                            <li>IPX5 waterproof rating</li>
+                        </ul>
+                        <a href="snow-blower.html" class="btn-product">
+                            Learn More
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- REPLACE WITH YOUR LAWN MOWER IMAGE -->
+                        <img src="images/yarbo-lawn-mower.jpg" alt="Yarbo Lawn Mower" class="product-img" />
+                        <!-- REPLACE WITH YARBO LAWN MOWER YOUTUBE VIDEO ID -->
+                        <iframe 
+                            class="product-video"
+                            src="https://www.youtube.com/embed/YOUR_LAWN_MOWER_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_LAWN_MOWER_VIDEO_ID&controls=0&modestbranding=1&rel=0"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media"
+                            allowfullscreen
+                        ></iframe>
+                        <!-- Placeholder (remove when you add real images) -->
+                        <div class="placeholder-image lawn-mower">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="8" width="18" height="10" rx="2"/>
+                                <circle cx="7" cy="21" r="2"/>
+                                <circle cx="17" cy="21" r="2"/>
+                                <path d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Yarbo Lawn Mowers</h3>
+                        <p>Autonomous precision mowing with 20" cutting width, handles up to 6 acres and 35° slopes. Choose between standard power or Pro model with dual 300W motors for commercial applications.</p>
+                        <ul class="product-highlights">
+                            <li>RTK-GPS navigation, no wires needed</li>
+                            <li>Auto-recharging dock</li>
+                            <li>Multiple mowing patterns</li>
+                            <li>Smart obstacle detection</li>
+                        </ul>
+                        <a href="lawn-mowers.html" class="btn-product">
+                            Learn More
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <span class="section-label">Why Terrain Trace</span>
+                    <h2>Your Local Yarbo Experts</h2>
+                    <p class="lead">We're more than just a dealer. We're your partners in transforming how you maintain your property in Orem and Provo.</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Authorized Dealer</h4>
+                                <p>Direct partnership with Yarbo ensures authentic products and warranty coverage</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Professional Installation</h4>
+                                <p>Complete setup including RTK base station, property mapping, and thorough training</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Flexible Options</h4>
+                                <p>Purchase, lease, or try service packages tailored to your needs</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Local Support</h4>
+                                <p>Fast response times with maintenance and emergency support in Utah County</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn-secondary">Learn More About Us</a>
+                </div>
+
+                <div class="why-choose-visual">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Acres Coverage</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">35°</div>
+                            <div class="stat-label">Max Slope</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Operation</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Autonomous</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Our Services</span>
+                <h2>Complete Yard Care Solutions</h2>
+                <p>From installation to ongoing maintenance, we handle everything</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Professional Installation</h3>
+                    <p>Complete system setup with RTK base station configuration, property mapping, zone setup, and comprehensive training on the Yarbo app.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Maintenance Packages</h3>
+                    <p>Priority service with system health monitoring, software updates, parts coverage, and emergency support for worry-free operation.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Flexible Leasing</h3>
+                    <p>Low upfront costs with seasonal or annual terms. Includes maintenance, equipment upgrades, and hassle-free returns when needed.</p>
+                </div>
+            </div>
+
+            <div class="cta-banner">
+                <div class="cta-content">
+                    <h3>Ready to Experience Effortless Lawn Care?</h3>
+                    <p>Schedule a free consultation to discuss your property needs and find the perfect solution</p>
+                </div>
+                <a href="contact.html" class="btn-large btn-white">Schedule Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Customer Reviews</span>
+                <h2>What Our Customers Say</h2>
+                <p>Real experiences from Orem and Provo property owners</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The Yarbo lawn mower has been a game-changer for our 3-acre property. Installation was seamless, and the support from Terrain Trace has been exceptional. Highly recommend!"</p>
+                    <div class="review-author">
+                        <strong>Michael R.</strong>
+                        <span>Orem, UT</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Never shoveling snow again! The Yarbo snow blower works perfectly even in heavy Utah snowstorms. Waking up to a clear driveway is incredible."</p>
+                    <div class="review-author">
+                        <strong>Jennifer L.</strong>
+                        <span>Provo, UT</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The Pro model handles our thick grass beautifully. The team at Terrain Trace was knowledgeable and made sure everything was configured perfectly for our yard."</p>
+                    <div class="review-author">
+                        <strong>David K.</strong>
+                        <span>Lindon, UT</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Best investment we've made for our home. The leasing option made it affordable, and the maintenance package gives us total peace of mind."</p>
+                    <div class="review-author">
+                        <strong>Sarah T.</strong>
+                        <span>Orem, UT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Signup -->
+    <section class="email-signup">
+        <div class="container">
+            <div class="email-signup-content">
+                <div class="email-signup-text">
+                    <h2>Stay Updated on Yarbo News & Tips</h2>
+                    <p>Get exclusive deals, maintenance tips, and be the first to know about new Yarbo features and products.</p>
+                </div>
+                <form class="email-signup-form" id="emailSignupForm">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Enter your email address" 
+                        required
+                    />
+                    <button type="submit" class="btn-primary">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Terrain Trace</h3>
+                            <p>Automated Lawn Care</p>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Revolutionary autonomous lawn mowers and snow blowers for Orem and Provo, Utah. Authorized Yarbo dealer with professional installation and service.</p>
+                    <div class="footer-badge">Authorized Yarbo Dealer</div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="lawn-mowers.html">Lawn Mowers</a></li>
+                        <li><a href="lawn-mowers.html#pro">Lawn Mower Pro</a></li>
+                        <li><a href="snow-blower.html">Snow Blower</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <a href="tel:+18015551234">(801) 555-1234</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:info@terraintrace.com">info@terraintrace.com</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Serving Orem & Provo, UT</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Terrain Trace. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
