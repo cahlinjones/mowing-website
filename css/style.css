@@ -442,8 +442,6 @@ ul {
 .hero-background {
     position: absolute;
     inset: 0;
-    /* ADD YOUR HERO IMAGE HERE - Replace 'none' with url('images/hero-bg.jpg') */
-    background-image: url('/images/mowerz.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -457,14 +455,6 @@ ul {
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.85) 100%);
 }
 
-.hero-background::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: 
-        radial-gradient(circle at 20% 50%, rgba(82, 183, 136, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, rgba(45, 106, 79, 0.1) 0%, transparent 50%);
-}
 
 .grass-animation {
     position: absolute;
