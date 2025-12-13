@@ -378,6 +378,11 @@ ul {
     flex-direction: column;
     gap: 0.375rem;
     padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
 }
 
 .mobile-menu-btn span {
@@ -1093,6 +1098,20 @@ ul {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+    }
+    
+    /* Hide hero images on mobile, show as background */
+    .hero-background img,
+    .page-hero-background img {
+        display: none;
+    }
+    
+    /* Make hero/page-hero use image as background on mobile */
+    .hero,
+    .page-hero {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 

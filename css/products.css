@@ -477,6 +477,11 @@
     .cta-buttons {
         flex-direction: column;
     }
+    
+    /* Hide page hero images on mobile */
+    .page-hero-background img {
+        display: none;
+    }
 }
 
 @media (max-width: 640px) {
