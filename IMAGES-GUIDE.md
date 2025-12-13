@@ -1,4 +1,4 @@
-# Image & Video Guide for Terrain Trace Website
+# Image & Video Guide for My Robot Mowers Website
 
 ## How to Add Your Images and Videos
 

@@ -1,8 +1,8 @@
-# Terrain Trace Website
+# My Robot Mowers Website
 
 ## Professional Multi-Page Website for Automated Lawn Care Solutions
 
-This is a complete, professional website for Terrain Trace - an authorized Yarbo dealer in Orem and Provo, Utah, specializing in robotic lawn mowers and snow blowers.
+This is a complete, professional website for My Robot Mowers - an authorized Yarbo dealer in Orem and Provo, Utah, specializing in robotic lawn mowers and snow blowers.
 
 ---
 
@@ -107,7 +107,7 @@ php -S localhost:8000
 ### Add Your Logo
 Replace the SVG logo in the navigation with:
 ```html
-<img src="images/logo.png" alt="Terrain Trace Logo">
+<img src="images/logo.png" alt="My Robot Mowers Logo">
 ```
 
 ### Add Product Images
@@ -164,7 +164,7 @@ You'll need to create these additional pages following the same structure as `in
 ### 4. about.html
 - Company story
 - Team introduction
-- Why choose Terrain Trace
+- Why choose My Robot Mowers
 - Service area map
 - Testimonials
 
@@ -306,7 +306,7 @@ For questions about this website:
 
 ## 📜 License
 
-This website template is created specifically for Terrain Trace. Modify as needed for your business.
+This website template is created specifically for My Robot Mowers. Modify as needed for your business.
 
 ---
 
@@ -325,4 +325,4 @@ This website template is created specifically for Terrain Trace. Modify as neede
 
 ---
 
-**Built with care for Terrain Trace** | Last Updated: December 2024
+**Built with care for My Robot Mowers** | Last Updated: December 2024

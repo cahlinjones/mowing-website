@@ -1,5 +1,5 @@
 // ========================================
-// TERRAIN TRACE - MAIN JAVASCRIPT
+// MY ROBOT MOWERS - MAIN JAVASCRIPT
 // ========================================
 
 // Navigation Scroll Effect
@@ -87,7 +87,7 @@ function initScrollAnimations() {
     
     // Observe all sections and cards
     const animatedElements = document.querySelectorAll(
-        '.product-card, .service-card, .feature-card, .benefit-item, .stat-card'
+        '.product-card, .service-card, .feature-card, .benefit-item, .stat-card, .comparison-card, .step-card, .feature-list li, .benefit-icon, .section-header, .product-detail-grid, .why-choose, .service-grid, .review-card, .spec-table, .cta-content, h2, h3'
     );
     
     animatedElements.forEach(el => {
