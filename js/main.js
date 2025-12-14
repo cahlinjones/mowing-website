@@ -23,9 +23,17 @@ function initMobileMenu() {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     
-    if (!mobileMenuBtn || !mobileMenu) return;
+    if (!mobileMenuBtn || !mobileMenu) {
+        console.log('Mobile menu elements not found');
+        return;
+    }
     
-    mobileMenuBtn.addEventListener('click', () => {
+    console.log('Mobile menu initialized');
+    
+    mobileMenuBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Mobile menu button clicked');
         mobileMenu.classList.toggle('active');
         mobileMenuBtn.classList.toggle('active');
     });

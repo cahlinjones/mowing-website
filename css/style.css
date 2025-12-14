@@ -383,6 +383,8 @@ ul {
     cursor: pointer;
     z-index: 1001;
     position: relative;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-menu-btn span {
@@ -1063,6 +1065,15 @@ ul {
     
     .mobile-menu-btn {
         display: flex;
+        pointer-events: auto !important;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.125rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.625rem;
     }
     
     .mobile-menu {
