@@ -30,13 +30,22 @@ function initMobileMenu() {
     
     console.log('Mobile menu initialized');
     
-    mobileMenuBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
+    // Simple direct click handler
+    mobileMenuBtn.onclick = function() {
         console.log('Mobile menu button clicked');
         mobileMenu.classList.toggle('active');
         mobileMenuBtn.classList.toggle('active');
-    });
+        return false;
+    };
+    
+    // Also try with addEventListener as backup
+    mobileMenuBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Mobile menu addEventListener fired');
+        mobileMenu.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+    }, true);
     
     // Close menu when clicking a link
     const mobileLinks = mobileMenu.querySelectorAll('a');
