@@ -54,6 +54,39 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
+    
+    <!-- Desktop-only background box for hero text -->
+    <style>
+        @media (min-width: 769px) {
+            .page-hero-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .page-hero-content h1 {
+                background: rgba(0, 50, 30, 0.1);
+                padding: 0.25rem 0.5rem !important;
+                border-radius: 0.5rem;
+                backdrop-filter: blur(10px);
+                display: inline-block;
+                width: fit-content;
+                margin: 0 0 1rem 0 !important;
+                line-height: 1.2;
+            }
+            
+            .page-hero-content p {
+                background: rgba(0, 50, 30, 0.1);
+                padding: 0.25rem 0.5rem !important;
+                border-radius: 0.5rem;
+                backdrop-filter: blur(10px);
+                display: inline-block;
+                width: fit-content;
+                margin: 0 !important;
+                line-height: 1.5;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
