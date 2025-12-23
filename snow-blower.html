@@ -229,6 +229,519 @@
             </div>
         </div>
     </section>
+<!-- ========================================
+     SPRING WAITLIST CTA SECTION
+     Add this section to any page (homepage, lawn-mowers.html, etc.)
+     ======================================== -->
+
+<section class="waitlist-cta">
+    <div class="container">
+        <div class="waitlist-content">
+            <!-- Left Side: Compelling Copy -->
+            <div class="waitlist-info">
+                <div class="urgency-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    Limited Spring Slots Available
+                </div>
+                
+                <h2>Reserve Your Spot for Spring 2025</h2>
+                
+                <p class="waitlist-description">
+                    Be among the first in Utah County to transform your lawn care. Early waitlist members lock in launch pricing and get priority installation before peak season.
+                </p>
+                
+                <div class="waitlist-benefits">
+                    <div class="benefit-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <div>
+                            <strong>Priority Scheduling</strong>
+                            <span>First to get installed when spring arrives</span>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        <div>
+                            <strong>Launch Pricing Locked In</strong>
+                            <span>Special early adopter rates guaranteed</span>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <div>
+                            <strong>VIP Support Package</strong>
+                            <span>Extended warranty & priority service calls</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-proof">
+                    <div class="avatars">
+                        <div class="avatar">👤</div>
+                        <div class="avatar">👤</div>
+                        <div class="avatar">👤</div>
+                        <div class="avatar-more">+12</div>
+                    </div>
+                    <p><strong>15 families</strong> have already reserved their spot this week</p>
+                </div>
+            </div>
+            
+            <!-- Right Side: Form -->
+            <div class="waitlist-form-container">
+                <form 
+                    name="spring-waitlist"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    action="/waitlist-thank-you.html"
+                    class="waitlist-form"
+                >
+                    <!-- Honeypot for spam protection -->
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    
+                    <input type="hidden" name="form-name" value="spring-waitlist" />
+                    
+                    <div class="form-header">
+                        <h3>Join the Waitlist</h3>
+                        <p>No commitment required • Takes 30 seconds</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input 
+                            type="text" 
+                            id="name"
+                            name="name" 
+                            placeholder="John Smith" 
+                            required 
+                        />
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email"
+                                name="email" 
+                                placeholder="john@example.com" 
+                                required 
+                            />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input 
+                                type="tel" 
+                                id="phone"
+                                name="phone" 
+                                placeholder="(801) 555-1234" 
+                                required 
+                            />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Home Address *</label>
+                        <input 
+                            type="text" 
+                            id="address"
+                            name="address" 
+                            placeholder="123 Main St, Orem, UT 84057" 
+                            required 
+                        />
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="yard_size">Approximate Yard Size *</label>
+                            <select id="yard_size" name="yard_size" required>
+                                <option value="">Select size</option>
+                                <option value="Small (Under 5,000 sq ft)">Small (Under 5,000 sq ft)</option>
+                                <option value="Medium (5,000-10,000 sq ft)">Medium (5,000-10,000 sq ft)</option>
+                                <option value="Large (10,000-20,000 sq ft)">Large (10,000-20,000 sq ft)</option>
+                                <option value="Extra Large (20,000+ sq ft)">Extra Large (20,000+ sq ft)</option>
+                                <option value="Not Sure">Not Sure</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="hoa">HOA?</label>
+                            <select id="hoa" name="hoa">
+                                <option value="">Select one</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Not Sure">Not Sure</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interested_in">Interested In</label>
+                        <select id="interested_in" name="interested_in">
+                            <option value="">Select product</option>
+                            <option value="Lawn Mower Only">Lawn Mower Only</option>
+                            <option value="Lawn Mower Pro">Lawn Mower Pro</option>
+                            <option value="Snow Blower Only">Snow Blower Only</option>
+                            <option value="Both (Lawn Mower & Snow Blower)">Both (Lawn Mower & Snow Blower)</option>
+                            <option value="Leasing Options">Leasing Options</option>
+                            <option value="Not Sure Yet">Not Sure Yet</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">
+                        <span>Reserve My Spot</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </button>
+                    
+                    <p class="form-disclaimer">
+                        🔒 Your information is secure. We'll only use it to contact you about your waitlist spot.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add this CSS to your style.css or include inline -->
+<style>
+.waitlist-cta {
+    padding: 8rem 0;
+    background: linear-gradient(135deg, #f8fdf9 0%, #e8f5f0 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.waitlist-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(82, 183, 136, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(45, 106, 79, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.waitlist-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+}
+
+.waitlist-info {
+    padding-top: 2rem;
+}
+
+.urgency-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: white;
+    border-radius: 2rem;
+    font-family: var(--font-system);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.urgency-badge svg {
+    width: 1rem;
+    height: 1rem;
+    animation: tick 1s linear infinite;
+}
+
+@keyframes tick {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.waitlist-info h2 {
+    font-size: 3.5rem;
+    color: var(--slate-900);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.waitlist-description {
+    font-size: 1.25rem;
+    color: var(--slate-600);
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.waitlist-benefits {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.waitlist-benefits .benefit-item {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+.waitlist-benefits svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary);
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.waitlist-benefits strong {
+    display: block;
+    font-size: 1.125rem;
+    color: var(--slate-900);
+    margin-bottom: 0.25rem;
+}
+
+.waitlist-benefits span {
+    color: var(--slate-600);
+    font-size: 0.95rem;
+}
+
+.social-proof {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    border: 2px solid white;
+    margin-left: -0.75rem;
+}
+
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.avatar-more {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--slate-200);
+    color: var(--slate-700);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: 2px solid white;
+    margin-left: -0.75rem;
+}
+
+.social-proof p {
+    font-size: 0.95rem;
+    color: var(--slate-700);
+    margin: 0;
+}
+
+.social-proof strong {
+    color: var(--primary);
+}
+
+.waitlist-form-container {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 100px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--slate-100);
+}
+
+.form-header h3 {
+    font-size: 2rem;
+    color: var(--slate-900);
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: var(--slate-600);
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-family: var(--font-system);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--slate-700);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--slate-200);
+    border-radius: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1.25rem 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(45, 106, 79, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.btn-submit svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-submit:hover svg {
+    transform: translateX(4px);
+}
+
+.form-disclaimer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--slate-500);
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .waitlist-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .waitlist-form-container {
+        position: static;
+    }
+    
+    .waitlist-info h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .waitlist-cta {
+        padding: 4rem 0;
+    }
+    
+    .waitlist-info h2 {
+        font-size: 2rem;
+    }
+    
+    .waitlist-form-container {
+        padding: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .urgency-badge {
+        font-size: 0.75rem;
+        padding: 0.625rem 1.25rem;
+    }
+}
+</style>
 
     <!-- Specifications -->
     <section class="specifications">
