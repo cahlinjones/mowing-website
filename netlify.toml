@@ -1,56 +1,36 @@
-# Netlify configuration for My Robot Mowers
+# Netlify configuration for My Robot Mowers (OLD DOMAIN)
+# Deploy this file to myrobotmowers.com to redirect to new domain
 
 # Build settings
 [build]
   publish = "."
 
-# Redirect rules
-[[redirects]]
-  from = "http://myrobotmowers.com/*"
-  to = "https://myrobotmowers.com/:splat"
-  status = 301
-  force = true
+# CRITICAL: 301 Permanent Redirects to New Domain
+# These redirects preserve SEO and send all traffic to myrobopro.com
 
 [[redirects]]
-  from = "http://www.myrobotmowers.com/*"
-  to = "https://myrobotmowers.com/:splat"
+  from = "https://myrobotmowers.com/*"
+  to = "https://myrobopro.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://www.myrobotmowers.com/*"
-  to = "https://myrobotmowers.com/:splat"
+  to = "https://myrobopro.com/:splat"
   status = 301
   force = true
 
-# Headers for caching and security
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    X-XSS-Protection = "1; mode=block"
-    Referrer-Policy = "strict-origin-when-cross-origin"
+[[redirects]]
+  from = "http://myrobotmowers.com/*"
+  to = "https://myrobopro.com/:splat"
+  status = 301
+  force = true
 
-# Cache CSS and JS for 1 year
-[[headers]]
-  for = "/css/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+[[redirects]]
+  from = "http://www.myrobotmowers.com/*"
+  to = "https://myrobopro.com/:splat"
+  status = 301
+  force = true
 
-[[headers]]
-  for = "/js/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Cache images for 1 year
-[[headers]]
-  for = "/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Don't cache HTML files
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
+# Note: The ":splat" captures the entire path and passes it to the new domain
+# Example: myrobotmowers.com/lawn-mowers.html → myrobopro.com/lawn-mowers.html
